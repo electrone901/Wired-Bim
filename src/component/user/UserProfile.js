@@ -91,18 +91,15 @@ class UserProfile extends Component{
             <div className="constainer text-center">
                 <div className="text-right">
                     <Link to={`${userData._id}/edit`} className="btn btn-primary">Edit profile</Link>
+
                 </div>
-                <div className="card-body backgroundProfile profile-text">
+                <div className="card-body backgroundImg profile-text">
                     <img src={ userData.image ? userData.image : userImage } className="thumbnail-user-profile" alt="Responsive" />
                     <h5 className="card-title">{ userData.name }</h5>
-                    <p className="card-text">NYC community Advocator</p>
-                    <p className="btn btn-primary">Level: Legendary</p>
+                    <p className="card-text">Location: NYC </p>
+                    <p className="btn btn-primary">Job title: Architectural Assistant </p>
                 </div>
-                <div className="card-footer">
-                    <img src={starBash} className="start-img" alt="Responsive" />
-                    <img src={starBash} className="start-img" alt="Responsive" />
-                    <img src={starBash} className="start-img" alt="Responsive" />
-                </div>
+                
             </div>        
         );
     }

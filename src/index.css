@@ -560,3 +560,25 @@ img.center {
   background-size:cover;
   background-position: bottom; 
 }
+.textSlicer {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  color: black;
+  font-weight: 600;
+}
+
+.myImage {
+  height: 100%;
+  width: 100%;
+    margin-left:-50%; /* line added */
+    margin-top:-50%; /* line added */
+
+    opacity:1; 
+    z-index: 1;  
+}
+
+.chartSpace {
+  padding-top:  60px;
+  padding-bottom:  145px;
+}

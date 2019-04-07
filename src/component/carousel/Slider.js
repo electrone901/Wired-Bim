@@ -21,7 +21,11 @@ export default class Slider extends Component {
 
 
             images: [
-                "images/2.jpg",
+                "sliderimages/bb.jpg",
+                "sliderimages/02.jpg",
+                "sliderimages/01.jpg",
+                "sliderimages/04.jpg",
+                "sliderimages/03.png",
             ],
             currentIndex: 0,
             translateValue: 0,
@@ -78,7 +82,9 @@ export default class Slider extends Component {
                 style={{
                     transform: `translateX(${this.state.translateValue}px)`,
                     transition: 'transform ease-out 0.45s',
-                    animationDelay: '0.45s'
+                    animationDelay: '0.45s',
+                    opacity: '1',
+                    position: 'top'
                 }}> 
                     {
                         this.state.images.map((image, i) => (

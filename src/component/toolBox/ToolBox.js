@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import backgroundImg from '../../img/Toolbox Background.png';
+import benefitsImg from '../../img/benefits.jpg';
+import how from '../../img/how.png';
+
 
 class ToolBox extends Component{
   constructor() {
@@ -99,12 +103,17 @@ class ToolBox extends Component{
   }
   render(){
       return(
-          <div>
+          <div className="space-top">
+            <div className="col-12 col-sm-12 col-md-12 space-top">
+                <img className="img-fluid center" src={how} alt="thumbnail-user-profile"/>
+            </div>
+            <br/>
+            <div className="col-12 col-sm-12 col-md-12 space-top">
+                <img className="img-fluid center" src={benefitsImg} alt="thumbnail-user-profile"/>
+            </div>
 
-            <h1 className="title">Explore by category</h1>
-            <div className="col-lg-3 col-md-3 col-sm-6">
-                    <button className="btn btn-primary btn-width" onClick={this.togglePopup.bind(this)}>Upload Files</button>
-                </div>
+
+
           </div>
       );
   }

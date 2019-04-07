@@ -23,6 +23,8 @@ class TextSlider extends Component {
         }
     }
     render() {
+        let explore = <Link to="/register" className="tParent__items__sign">Explore</Link>;
+    
         return (
             <div className="tParent">
                 <div className="row">
@@ -30,7 +32,7 @@ class TextSlider extends Component {
                         <h1 className="">Collaboration tool for AEC industry</h1>
                         <p className="tParent__items__subTittle"> based on BIM database Analytics</p>
                         {
-                            this.state.auth ? null:<Link to="/register" className="tParent__items__sign">Sign Up</Link>
+                            this.state.auth ? explore:<Link to="/register" className="tParent__items__sign">Sign Up</Link>
                         }
                     </div>
                 </div>

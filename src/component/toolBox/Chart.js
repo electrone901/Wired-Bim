@@ -120,7 +120,7 @@ class Chart extends Component{
         </div>;
 
       return(
-        <div className="container3">
+        <div className="container3 chartSpace">
             {
                 this.state.EstimatorLandingImg ? EstimatorLandingImg: chart
             }

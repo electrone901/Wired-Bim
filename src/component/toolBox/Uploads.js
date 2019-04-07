@@ -66,12 +66,23 @@ class Uploads extends Component{
         const {errors} = this.state;
         console.log('state', this.state)
         let successDisplay = <div class="col text-center">
-                  <Link to="/file-managment">
                     <img className="img-fluid center" src={SuccessImg} alt="thumbnail-user-profile"/>
-                  </Link>
+                    <h4 className="text-left">What do you want to do next?</h4>
+                    <div className="row text-center">
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <Link className="btn btn-primary btn-width" to="/file-managment">Browse Files</Link>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <Link className="btn btn-primary btn-width" to="/upload-files">Upload more Files</Link>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <Link className="btn btn-primary btn-width" to="/profile/5caa205ca8ed9500048fb257">Check my Profile</Link>
+                      </div>
+                    </div>
+                    
                 </div>;
 
-        let form =   <div className="row">
+        let form =   <div className="row text-center">
         <div className="col-md-8 m-auto">
           <h1 className="display-4 text-center">Uploads Files</h1>
           <form noValidate onSubmit={this.onSubmit}>
@@ -80,6 +91,7 @@ class Uploads extends Component{
                 className={classnames('form-control form-control-lg', {
                   'is-invalid': errors.name
                 })}
+                required="required" 
                 placeholder="Name"
                 name="name"
                 value={this.state.name}
