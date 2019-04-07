@@ -16,6 +16,8 @@ import ToolBoxLandingPage from './component/toolBox/ToolBoxLandingPage';
 import AnalysisCharts from './component/toolBox/AnalysisCharts';
 import OptionsUpload from './component/toolBox/OptionsUpload';
 import Uploads from './component/toolBox/Uploads';
+import Chart from './component/toolBox/Chart';
+import FileManagment from './component/toolBox/FileManagment';
 
 
 
@@ -59,6 +61,8 @@ class App extends Component {
               <Route exact path="/analysis-charts" component={AnalysisCharts} />
               <Route exact path="/options-upload" component={OptionsUpload} />
               <Route exact path="/upload-files" component={Uploads} />
+              <Route exact path="/chart" component={Chart} />
+              <Route exact path="/file-managment" component={FileManagment} />
 
 
               <Route exact path="/confirmation-post" component={PreviewConfirmationPost} />

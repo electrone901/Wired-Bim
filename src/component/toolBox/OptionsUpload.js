@@ -1,16 +1,26 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
+import AccessImg from '../../img/Access.png';
+import UploadImg from '../../img/Upload.png';
+
+
 class OptionsUpload extends Component{
   render(){
-      
       return(
-          <div className="container">
-            <h1>BIM Cloud</h1>
-            <div className="row-center">
-                <Link to="/analysis-charts" className="btn btn-primary btn-width">Access Projects</Link><br/> <br/>
-                <Link to="/upload-files" className="btn btn-primary btn-width">Upload Files</Link>
-            </div>
+          <div className="backgroundImg profile-text text-center">
+            <h1 className="space-topTitle">Everything In One Place</h1>
+                <div class="col text-center">
+                  <Link to="/upload-files">
+                    <img className="img-fluid center" src={UploadImg} alt="thumbnail-user-profile"/>
+                  </Link>
+                </div><br/>
+
+                <div class="col text-center">
+                  <Link to="/file-managment">
+                    <img className="img-fluid center" src={AccessImg} alt="thumbnail-user-profile"/>
+                  </Link>
+                </div>
           </div>
       );
   }

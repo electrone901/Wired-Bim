@@ -83,7 +83,7 @@ class Navbar extends Component {
                   ToolBoox
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/categories">
+                <Link className="nav-link" to="/options-upload">
                   {' '}
                   Projects 
                 </Link>
